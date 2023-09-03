@@ -1,0 +1,142 @@
+/* 
+    Styling Native Element
+ */
+input:focus {
+    box-shadow: none !important;
+}
+
+/* Loader */
+
+.spinner {
+    transition: opacity 0.8s;
+    opacity: 100%;
+}
+
+.spinner-hide {
+    opacity: 0%;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid rgb(26, 26, 26);
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 24px);
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* 
+    -- Effect For Image Card
+    -- Rotation Animate
+*/
+.img-card {
+    transition: transform 0.3s;
+}
+
+.img-card:hover {
+    transform: scale(1.2);
+}
+
+/* 
+    -- Effect For Album
+    -- Posistion And Rotation Animate
+*/
+.albums .item {
+    transition: transform 0.3s;
+}
+
+.albums:hover .item:nth-child(1) {
+    transform: rotate(-15deg) translateX(-40px) translateY(-40px);
+    padding: 10px;
+}
+
+.albums:hover .item:nth-child(2) {
+    transform: rotate(15deg) translateX(90px) translateY(-90px);
+}
+
+.albums:hover .item:nth-child(3) {
+    transform: rotate(-15deg) translateX(-40px) translateY(40px);
+}
+
+/* 
+    -- Responsive Medium Screen 
+    -- With Maximum Witdh 992px
+
+*/
+@media (max-width: 992px) {
+    .card {
+        min-width: 33%;
+    }
+    .row {
+        flex-direction: row;
+    }
+    .gap-3 {
+        gap: 0.5px !important;
+    }
+}
+
+/* 
+    -- Responsive Small Screen 
+    -- With Maximum Witdh 768px
+
+*/
+@media (max-width: 768px) {
+    .px-5 {
+        padding: 0 1rem !important;
+    }
+
+    .p-5 {
+        padding: 1rem !important;
+    }
+
+    .mt-5 {
+        margin-top: 1rem !important;
+    }
+
+    .gap-3 {
+        gap: 0.5px !important;
+    }
+    .gap-5 {
+        gap: 1rem !important;
+    }
+
+    .col-6 {
+        width: 90%;
+    }
+    .w-50 {
+        width: 100% !important;
+    }
+    
+    .group {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .w-50 {
+        width: 75% !important;
+    }
+}

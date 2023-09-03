@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traveling</title>
+    <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body onload="open()">
+    <!-- Spinner for Loader -->
+    <div class="spinner position-fixed bg-body" style="z-index: 10;left: 0;right: 0;bottom: 0;top: 0;">
+        <span class="loader"></span>
+    </div>
+    <!-- Navbar -->
+    <div class="w-100 overflow-hidden">
+        <nav class="navbar navbar-expand-lg position-fixed bg-body z-3" style="left: 0;right: 0;">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand" href="#ref1">
+                    <img src="./image/favicon.png" alt="favicon" width="25">
+                    <b class="ms-2">Traveling</b>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="box-shadow: none;">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ref1">How It Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ref2">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ref3">Case Study</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ref4">About Us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex flex-row gap-2 align-items-center">
+                        <div class="position-relative shadow-sm rounded-circle p-1 text-center" style="width: 30px;">
+                            <img src="./image/heart.png" alt="heart" width="15">
+                        </div>
+                        <div class="position-relative shadow-sm rounded-circle p-1 text-center" style="width: 30px;">
+                            <img src="./image/user.png" alt="user.png" width="15">
+                        </div>
+                        <a class="text-danger" href="#">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Discover -->
+        <div class="container-fluid" id="ref1" style="height: 100vh; background: url('./image/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;">
+            <div class="col-6 p-5 position-absolute top-50 translate-middle-y" style="left: 0;background: rgba(255, 255, 255, 0.3);backdrop-filter: blur(1px);">
+                <h1 class="fs-1 mt-2">Discover</h1>
+                <h2 class="mt-2">New Destination</h2>
+                <p class="mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat veniam odio ducimus ullam dolore dolorum sequi accusantium aperiam neque explicabo.</p>
+                <div class="position-relative bg-body d-flex flex-row flex-wrap align-items-end gap-4 p-3">
+                    <div class="w-25">
+                        <label for="location" class="form-label">Location</label>
+                        <input class="form-control" width="30" type="text" id="location" placeholder="Indonesia">
+                    </div>
+                    <div class="w-50">
+                        <label for="date" class="form-label">Date</label>
+                        <input type="date" class="form-control" id="date">
+                    </div>
+                    <div>
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                </div>
+                <p class="mt-3">
+                    <b>Discover: </b>Lorem ipsum dolor sit.
+                </p>
+            </div>
+        </div>
+        <!-- Top Values For You -->
+        <div class="p-5" id="ref2">
+            <div class="text-center mx-auto w-50" data-aos="fade-up">
+                <h5 class="text-danger">What we serve</h5>
+                <h1>Top Value For You</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere tempore magni, amet placeat expedita soluta in adipisci nulla? Cupiditate.</p>
+            </div>
+            <div class="group mt-5 d-flex flex-row gap-5">
+                <div class="p-2 shadow-sm" data-aos="fade-right">
+                    <img src="./image/flight.png" alt="flight">
+                    <h3>Flight Revervations</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores velit quis esse dolorem accusantium accusamus deleniti natus debitis.</p>
+                </div>
+                <div class="p-2 shadow-sm" data-aos="fade-up">
+                    <img src="./image/traveler.png" alt="traveler">
+                    <h3>Accomodation Travaler</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, alias blanditiis dignissimos cum officiis laboriosam iste!</p>
+                </div>
+                <div class="p-2 shadow-sm" data-aos="fade-left">
+                    <img src="./image/globe.png" alt="globe">
+                    <h3>Explore Around The Word</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur enim distinctio, vitae possimus harum unde praesentium itaque repellendus officiis sit veniam velit amet.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Traveeling Tours Packages-->
+        <div class="p-5" id="ref3">
+            <div class="d-flex flex-row justify-content-between align-items-end">
+                <div class="w-50" data-aos="fade-right">
+                    <h1>Traveling Tours Packages</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione dolor, sed eveniet modi consequatur omnis corporis nisi labore voluptates. Aliquid sint voluptate id rem animi architecto omnis quasi?</p>
+                </div>
+                <div data-aos="fade-left">
+                    <div class="p-2 mb-4 rounded-circle shadow">
+                        <img src="./image/arrow-right.png" alt="arrow-right" width="40">
+                    </div>
+                </div>
+            </div>
+            <!-- Card -->
+            <div class="mt-5 d-flex flex-row flex-nowrap gap-3 py-2 overflow-x-scroll" data-aos="fade-down">
+                <!-- card Items -->
+                <div class="card shadow w-25 d-flex flex-column">
+                    <div class="overflow-hidden">
+                        <img class="img-card w-100 ratio ratio-4x3" src="./image/woman-sitting-cliff-looking-sunset-kelingking-beach-nusa-penida-island-bali-indonesia.jpg" alt="woman-sitting-cliff-looking-sunset-kelingking-beach-nusa-penida-island-bali-indonesia">
+                    </div>
+                    <div class="m-2">
+                        <p class="fs-6">Location: Kelingking beach, Bali, Indonesia</p>
+                        <b>Bali Is A Province Of Indonesia And The Westernmost Of The Lesser SUnda Insland</b>
+                        <div class="d-flex flex-row justify-content-between">
+                            <b>From $1,550/ <sub>Person</sub></b>
+                            <div class="bg-warning-subtle px-2 py-1 rounded-5">
+                                <img class="mb-1" src="./image/star.png" alt="star" width="20">
+                                4.5
+                            </div>
+                        </div>
+                        <button class="mt-2 btn btn-outline-primary fs-6">View Availibility</button>
+                    </div>
+                </div>
+                <div class="card shadow w-25 d-flex flex-column">
+                    <div class="overflow-hidden">
+                        <img class="img-card w-100 ratio ratio-4x3" src="./image/woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia.jpg" alt="woman-walking-kelingking-beach-nusa-penida-island-bali-indonesia">
+                    </div>
+                    <div class="m-2">
+                        <p class="fs-6">Location: Kelingking beach, Bali, Indonesia</p>
+                        <b>Bali Is A Province Of Indonesia And The Westernmost Of The Lesser SUnda Insland</b>
+                        <div class="d-flex flex-row justify-content-between">
+                            <b>From $1,550/ <sub>Person</sub></b>
+                            <div class="bg-warning-subtle px-2 py-1 rounded-5">
+                                <img class="mb-1" src="./image/star.png" alt="star" width="20">
+                                4.5
+                            </div>
+                        </div>
+                        <button class="mt-2 btn btn-outline-primary fs-6">View Availibility</button>
+                    </div>
+                </div>
+                <div class="card shadow w-25 d-flex flex-column">
+                    <div class="overflow-hidden">
+                        <img class="img-card w-100 ratio ratio-4x3" src="./image/wooden-bridge-koh-nangyuan-island-surat-thani-thailand.jpg" alt="wooden-bridge-koh-nangyuan-island-surat-thani-thailand">
+                    </div>
+                    <div class="m-2">
+                        <p class="fs-6">Location: Kelingking beach, Bali, Indonesia</p>
+                        <b>Bali Is A Province Of Indonesia And The Westernmost Of The Lesser SUnda Insland</b>
+                        <div class="d-flex flex-row justify-content-between">
+                            <b>From $1,550/ <sub>Person</sub></b>
+                            <div class="bg-warning-subtle px-2 py-1 rounded-5">
+                                <img class="mb-1" src="./image/star.png" alt="star" width="20">
+                                4.5
+                            </div>
+                        </div>
+                        <button class="mt-2 btn btn-outline-primary fs-6">View Availibility</button>
+                    </div>
+                </div>
+                <div class="card shadow w-25 d-flex flex-column">
+                    <div class="overflow-hidden">
+                        <img class="img-card w-100 ratio ratio-4x3" src="./image/young-woman-tourist-photographing-landscape.jpg" alt="young-woman-tourist-photographing-landscape">
+                    </div>
+                    <div class="m-2">
+                        <p class="fs-6">Location: Kelingking beach, Bali, Indonesia</p>
+                        <b>Bali Is A Province Of Indonesia And The Westernmost Of The Lesser SUnda Insland</b>
+                        <div class="d-flex flex-row justify-content-between">
+                            <b>From $1,550/ <sub>Person</sub></b>
+                            <div class="bg-warning-subtle px-2 py-1 rounded-5">
+                                <img class="mb-1" src="./image/star.png" alt="star" width="20">
+                                4.5
+                            </div>
+                        </div>
+                        <button class="mt-2 btn btn-outline-primary fs-6">View Availibility</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Experience -->
+        <div class="w-100 p-5 overflow-hidden row bg-body-tertiary" id="ref4">
+            <div class="albums col-lg position-relative" style="height: 50vh;" data-aos="fade-right">
+                <img class="item position-absolute w-50 z-1" style="left: 5%;" src="./image/photographer-hand-holding-camera-standing-top-rock-nature-travel-concept-vintage-tone.jpg" alt="photographer-hand-holding-camera-standing-top-rock-nature-travel-concept-vintage-tone">
+                <img class="item position-absolute w-50 z2" style="bottom: 5%; right: 10%;" src="./image/set-cottages-ocean-blue-sky.jpg" alt="set-cottages-ocean-blue-sky">
+                <img class="item position-absolute w-50 z3" style="bottom: 5%;" src="./image/full-shot-women-with-floaters.jpg" alt="full-shot-women-with-floaters">
+            </div>
+            <div class="col-lg" data-aos="fade-left">
+                <h1 class="mt-5">With Our Experience We Will Serve You</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eveniet officiis error esse rem ea eligendi obcaecati explicabo cum odit saepe unde ullam ut distinctio nesciunt corrupti ipsa recusandae dolor, quas molestiae laudantium. Possimus numquam aliquam ad magni. Quis, quam.</p>
+                <button class="btn btn-primary">Explore More</button>
+                <div class="mt-3 bg-body row">
+                    <div class="col">
+                        <h2>14</h2>
+                        <p>Year Experience</p>
+                    </div>
+                    <div class="col">
+                        <h2>546+</h2>
+                        <p>Destination Colaboration</p>
+                    </div>
+                    <div class="col">
+                        <h2>70K+</h2>
+                        <p>Happy Customer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Our Customers -->
+        <div class="p-5 row w-100">
+            <div class="col" data-aos="fade-right">
+                <h1>Whats Our Customers Say</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, earum nisi odio excepturi ipsum reiciendis sequi quae distinctio delectus eos dignissimos, facere, cumque inventore ipsa minus quisquam eaque?</p>
+                <span>
+                    <b>150 People love</b>
+                </span>
+                <div class="d-flex flex-row">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person1.png" width="40" height="40" alt="person1">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person2.png" width="40" height="40" alt="person2">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person3.png" width="40" height="40" alt="person3">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person1.png" width="40" height="40" alt="person1">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person2.png" width="40" height="40" alt="person2">
+                    <img class="border border-light rounded-circle" style="margin-right: -10px;" src="./image/person3.png" width="40" height="40" alt="person3">
+                </div>
+                <img class="position-relative opacity-25" style="left: 230px; bottom: 70px;" src="./image/menu.png" alt="menu" width="120">
+            </div>
+            <div class="col overflow-hidden p-3" data-aos="fade-left">
+                <div class="position-relative left-0 d-flex flex-row gap-2">
+                    <!-- Testimoni Customers -->
+                    <div class="col position-relative shadow rounded-4 p-2" style="min-width: 45%;">
+                        <p class="mt-1">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia ipsum ab. Sed expedita ut vero quisquam temporibus alias consequatur perspiciatis cumque ipsum deleniti?"
+                        </p>
+                        <div class="d-flex flex-row gap-2">
+                            <img src="./image/person3.png" width="40" height="40" alt="person3">
+                            <span>
+                                <b>DAvidson</b>
+                                <p>danka id</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col position-relative shadow rounded-4 p-2 opacity-75" style="min-width: 45%;">
+                        <p class="mt-1">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia ipsum ab. Sed expedita ut vero quisquam temporibus alias consequatur perspiciatis cumque ipsum deleniti?"
+                        </p>
+                        <div class="d-flex flex-row gap-2">
+                            <img src="./image/person2.png" width="40" height="40" alt="person2">
+                            <span>
+                                <b>DAvidson</b>
+                                <p>danka id</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col position-relative shadow rounded-4 p-2 opacity-50" style="min-width: 45%;">
+                        <p class="mt-1">
+                            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa officia ipsum ab. Sed expedita ut vero quisquam temporibus alias consequatur perspiciatis cumque ipsum deleniti?"
+                        </p>
+                        <div class="d-flex flex-row gap-2">
+                            <img src="./image/person1.png" width="40" height="40" alt="person1">
+                            <span>
+                                <b>DAvidson</b>
+                                <p>danka id</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="p-5 w-100 bg-body-tertiary">
+            <div class="row">
+                <div class="col">
+                    <img src="/image/favicon.png" alt="favicon" width="25">
+                    <b class="ms-2">Traveling</b>
+                    <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fuga, illum maxime adipisci eveniet quisquam! Enim quos, impedit neque eos adipisci vitae rerum?</p>
+                </div>
+                <div class="col d-flex flex-row">
+                    <div class="col lh-1">
+                        <p>
+                            <b>About</b>
+                        </p>
+                        <p>Find Jobs</p>
+                        <p>Find Componies</p>
+                        <p>I`m Company</p>
+                    </div>
+                    <div class="col lh-1">
+                        <p>
+                            <b>Company</b>
+                        </p>
+                        <p>The Team</p>
+                        <p>About Us</p>
+                        <p>Blog</p>
+                        <p>Pres</p>
+                    </div>
+                </div>
+                <div class="col d-flex flex-row">
+                    <div class="col lh-1">
+                        <p>
+                            <b>Resource</b>
+                        </p>
+                        <p>Supporr</p>
+                        <p>Contact</p>
+                        <p>Comunity Center</p>
+                        <p>Resource Center</p>
+                    </div>
+                    <div class="col lh-1">
+                        <p>
+                            <b>Support</b>
+                        </p>
+                        <p>Help Center</p>
+                        <p>Cancellation Options</p>
+                        <p>Trust & Safety</p>
+                    </div>
+                </div>
+            </footer>
+        <div class="bg-dark p-2 text-light text-center">
+            Website By Alam Abdillah
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
