@@ -16,7 +16,7 @@ Findjob landing page created with pure html css javascript. This page is intende
 ## Basic Usage
 clone this repositori
 ``` 
-  git clone https://github.com/Alamabd/LandingPage-Findjob.git
+  https://github.com/Alamabd/LandingPage-Traveling.git
 ```
 After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
 
